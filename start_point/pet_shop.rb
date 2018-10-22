@@ -29,5 +29,15 @@ end
 
 
 def stock_count(pet_shop)
-  return pet_shop += [:pets]
+  return pet_shop[:pets].length
+end
+
+
+
+def pets_by_breed(pet_shop, breed_type)
+  pet_count = []
+  if pet_shop[:pets][:breed] == breed_type
+    pet_count << 2
+    return 
+  end
 end
